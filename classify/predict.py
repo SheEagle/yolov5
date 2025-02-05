@@ -207,7 +207,7 @@ def run(
 def parse_opt():
     """Parses command line arguments for YOLOv5 inference settings including model, source, device, and image size."""
     parser = argparse.ArgumentParser()
-    parser.add_argument("--weights", nargs="+", type=str, default=ROOT / "yolov5s-cls.pt", help="model path(s)")
+    parser.add_argument("--weights", nargs="+", type=str, default=ROOT / "best.pt", help="model path(s)")
     parser.add_argument("--source", type=str, default=ROOT / "data/images", help="file/dir/URL/glob/screen/0(webcam)")
     parser.add_argument("--data", type=str, default=ROOT / "data/coco128.yaml", help="(optional) dataset.yaml path")
     parser.add_argument("--imgsz", "--img", "--img-size", nargs="+", type=int, default=[224], help="inference size h,w")
