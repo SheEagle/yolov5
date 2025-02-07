@@ -1,0 +1,13 @@
+# my_custom_dataset.yaml
+path: ../datasets/my_custom_dataset  # dataset root dir
+train: images/train  # train images (relative to 'path')
+val: images/val  # val images (relative to 'path')
+#test: images/val  # val images (relative to 'path')
+
+names:
+  0: Not Weighed
+  1: Weighed
+
+# Download script/URL (optional)
+# 如果你需要自动下载脚本或URL，可以在这里添加。对于本地数据集，这个字段通常是不需要的。
+# download: [your_download_link_or_script]
